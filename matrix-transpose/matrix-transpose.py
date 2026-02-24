@@ -5,11 +5,14 @@ def matrix_transpose(A):
     Return the transpose of matrix A (swap rows and columns).
     """
     # Write code here
-    m , n = A.shape
+    A = np.array(A)
+    n, m = A.shape
 
-    B = np.zeros((n, m))
 
-    for i in range(m):
-        for j in range(n):
-            B[j, i] = A[i,j]
+    B = np.zeros((m,n))
+
+    for i in range(n):
+        for j in range(m):
+            B[j,i] = A[i,j]
     return B
+
