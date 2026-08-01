@@ -19,14 +19,15 @@ def information_gain(y, split_mask):
     Compute Information Gain of a binary split on labels y.
     Use the _entropy() helper above.
     """
-    y = np.array(y)
-    split_mask = np.array(split_mask)
+    # Write code here
+    parent_val = _entropy(y)
 
-    left = y[split_mask]
-    right = y[~split_mask]
-
-    n = len(y)
+    # computing childs
     n1 = split_mask.sum()
-    n2 = n - n1
+    n2 = len(y) - n1
 
-    return _entropy(y) - n1 / n * _entropy(left) - n2 / n * _entropy(right)
+    childs_val = n1 / (n1 + n2) * _entropy(y[split_mask]) + n2 / (n1 + n2) * _entropy(
+        y[~split_mask]
+    )
+
+    return parent_val - childs_val
