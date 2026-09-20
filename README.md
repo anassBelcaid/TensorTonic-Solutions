@@ -178,6 +178,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | GAN Discriminator | Implement a GAN discriminator that maps input samples through dense layers to real-versus-fake probabilities. | https://www.tensortonic.com/research/gan/gan-discriminator |
 | GAN Generator | Implement a GAN generator that transforms latent noise through learned dense layers into generated samples. | https://www.tensortonic.com/research/gan/gan-generator |
 | GAN Loss Functions | Compute numerically stable binary cross-entropy losses for the GAN generator and discriminator objectives. | https://www.tensortonic.com/research/gan/gan-loss |
+| Mode Collapse Detection | Detect GAN mode collapse by measuring diversity across generated samples and flagging low-variance outputs. | https://www.tensortonic.com/research/gan/gan-mode-collapse |
 | GAN Training Loop | Implement one GAN training iteration with separate discriminator and generator forward and update steps. | https://www.tensortonic.com/research/gan/gan-training-loop |
 | Candidate Hidden State | Compute the GRU candidate hidden state from the current input and the reset-gated previous hidden state. | https://www.tensortonic.com/research/gru/gru-candidate |
 | Complete GRU Cell | Build a complete GRU cell with reset and update gates, candidate computation, and the final hidden-state update. | https://www.tensortonic.com/research/gru/gru-cell |
